@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>OBITO STUDIO | Web Design & Video Editing</title>
+<meta name="description" content="OBITO STUDIO is an independent creative studio offering modern website design, video editing and Instagram Reels editing for local businesses.">
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<header class="nav">
+  <a href="#home" class="logo">OBITO STUDIO</a>
+  <button class="burger" id="burger" aria-label="Menu">☰</button>
+  <nav id="menu">
+    <a href="#home">Home</a>
+    <a href="#services">Services</a>
+    <a href="#work">Work</a>
+    <a href="#about">About</a>
+    <a href="#contact">Contact</a>
+    <a href="#contact" class="btn small">Contact</a>
+  </nav>
+</header>
+
+<main>
+<!-- HERO -->
+<section id="home" class="hero">
+  <p class="label">INDEPENDENT CREATIVE STUDIO</p>
+  <h1>Digital Experiences.<br>Creative Visuals.</h1>
+  <p class="lead">We help businesses build a stronger online presence through modern websites and creative video content.</p>
+  <div class="btns">
+    <a href="#work" class="btn">Explore My Work</a>
+    <a href="#contact" class="btn ghost">Let's Talk</a>
+  </div>
+  <div class="visual">
+    <div class="browser">
+      <div class="dots"><i></i><i></i><i></i></div>
+      <div class="bar w60"></div><div class="bar w40"></div>
+      <div class="timeline"><span style="width:30%"></span><span style="width:20%"></span><span style="width:35%"></span></div>
+      <div class="play">▶</div>
+    </div>
+  </div>
+</section>
+
+<!-- SERVICES -->
+<section id="services">
+  <p class="label">SERVICES</p>
+  <h2>What I Can Do For You</h2>
+  <div class="grid">
+    <div class="card reveal"><span class="num">01</span><h3>Website Design</h3><p>Modern, responsive websites designed to help local businesses present their products and services professionally.</p></div>
+    <div class="card reveal"><span class="num">02</span><h3>Video Editing</h3><p>Engaging promotional videos and polished edits for brands and businesses.</p></div>
+    <div class="card reveal"><span class="num">03</span><h3>Instagram Reels</h3><p>Short-form video content designed to capture attention and showcase your business.</p></div>
+  </div>
+</section>
+
+<!-- WORK -->
+<section id="work">
+  <p class="label">SELECTED WORK</p>
+  <h2>Concept Projects</h2>
+  <p class="note">These are fictional concept designs, not real client projects.</p>
+  <div class="grid">
+
+    <article class="card project reveal">
+      <span class="tag">Concept Project</span>
+      <!-- PHOTO: replace the next line with <img src="images/sneaker.jpg" alt="Sneaker"> -->
+      <div class="ph">Add sneaker photo</div>
+      <h3>01 · OBITO SNEAKERS</h3>
+      <p>A premium streetwear sneaker store website concept.</p>
+      <div class="mini"><div>Runner One<b>₹4,999</b></div><div>Street Low<b>₹3,799</b></div></div>
+    </article>
+
+    <article class="card project reveal">
+      <span class="tag">Demo Design</span>
+      <!-- PHOTO: replace with <img src="images/clothing.jpg" alt="Clothing"> -->
+      <div class="ph">Add clothing photo</div>
+      <h3>02 · URBAN THREADS</h3>
+      <p>A modern, fashion-focused clothing store website concept.</p>
+      <div class="mini"><div>Oversized Tee<b>₹999</b></div><div>Cargo Pants<b>₹1,799</b></div></div>
+    </article>
+
+    <article class="card project reveal">
+      <span class="tag">Concept Project</span>
+      <!-- PHOTO: replace with <img src="images/coffee.jpg" alt="Coffee"> -->
+      <div class="ph">Add coffee photo</div>
+      <h3>03 · BREW &amp; BEAN</h3>
+      <p>A cafe website concept with menu preview and location section.</p>
+      <div class="mini"><div>Cold Coffee<b>₹149</b></div><div>Cappuccino<b>₹129</b></div></div>
+      <small>📍 Sample location · Sample contact</small>
+    </article>
+
+  </div>
+</section>
+
+<!-- VIDEOS -->
+<section id="videos">
+  <p class="label">VIDEO EDITING</p>
+  <h2>Visuals That Tell Your Story.</h2>
+  <div class="grid">
+    <!-- To add your video: delete the <div class="ph video">...</div> line and paste:
+         <video src="videos/edit1.mp4" controls playsinline></video>
+         OR a YouTube link: <iframe src="https://www.youtube.com/embed/VIDEO_ID" allowfullscreen></iframe> -->
+    <div class="card reveal"><div class="ph video">▶ Video sample 1</div></div>
+    <div class="card reveal"><div class="ph video">▶ Video sample 2</div></div>
+    <div class="card reveal"><div class="ph video">▶ Reel sample 3</div></div>
+  </div>
+</section>
+
+<!-- ABOUT -->
+<section id="about">
+  <p class="label">ABOUT</p>
+  <h2>Small Studio. Big Ideas.</h2>
+  <p class="lead">OBITO STUDIO is an independent creative brand focused on modern web design and engaging video content. Our goal is to help businesses present themselves professionally online through clean design and creative visuals.</p>
+</section>
+
+<!-- CONTACT -->
+<section id="contact">
+  <p class="label">CONTACT</p>
+  <h2>Have a Project in Mind?</h2>
+  <p class="lead">Let's discuss how we can bring your ideas to life.</p>
+  <div class="btns">
+    <a class="btn" href="https://www.instagram.com/edit4obito/" target="_blank" rel="noopener">Instagram</a>
+    <!-- Replace 910000000000 with your number: 91 + 10 digit number, no + or spaces -->
+    <a class="btn ghost" href="https://wa.me/910000000000" target="_blank" rel="noopener">WhatsApp</a>
+    <!-- Replace with your email -->
+    <a class="btn ghost" href="mailto:youremail@example.com">Email</a>
+  </div>
+</section>
+</main>
+
+<footer>
+  <strong>OBITO STUDIO</strong>
+  <p>Web Design &amp; Video Editing</p>
+  <p>Instagram: @edit4obito</p>
+  <p>© <span id="year"></span> OBITO STUDIO. All rights reserved.</p>
+</footer>
+
+<script src="script.js"></script>
+</body>
+</html>
