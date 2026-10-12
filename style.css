@@ -70,3 +70,26 @@ footer strong{color:#fff;letter-spacing:3px}
   .grid{grid-template-columns:repeat(3,1fr)}
 }
 .pic{height:200px;object-fit:cover;margin-bottom:16px}
+/* PREMIUM */
+.hero>*{opacity:0;transform:translateY(30px);animation:up .9s cubic-bezier(.2,.7,.2,1) forwards}
+.hero>*:nth-child(1){animation-delay:.1s}
+.hero>*:nth-child(2){animation-delay:.25s}
+.hero>*:nth-child(3){animation-delay:.4s}
+.hero>*:nth-child(4){animation-delay:.55s}
+.hero>*:nth-child(5){animation-delay:.7s}
+@keyframes up{to{opacity:1;transform:none}}
+.reveal{transition:opacity .9s cubic-bezier(.2,.7,.2,1),transform .9s cubic-bezier(.2,.7,.2,1),border-color .3s}
+.grid .reveal:nth-child(2){transition-delay:.12s}
+.grid .reveal:nth-child(3){transition-delay:.24s}
+.card.reveal.show:hover{transform:translateY(-4px);transition-delay:0s}
+.card{position:relative;overflow:hidden}
+.card::before{content:"";position:absolute;inset:0;background:radial-gradient(300px circle at var(--x,50%) var(--y,0%),rgba(255,255,255,.07),transparent 60%);opacity:0;transition:opacity .3s;pointer-events:none}
+.card:hover::before{opacity:1}
+.pic{transition:transform .6s}
+.card:hover .pic{transform:scale(1.04)}
+.btn{transition:.35s cubic-bezier(.2,.7,.2,1)}
+.btn:hover{transform:translateY(-3px);box-shadow:0 8px 24px rgba(255,255,255,.12)}
+.nav{backdrop-filter:blur(12px);transition:padding .3s,background .3s}
+.nav.scrolled{padding-top:10px;padding-bottom:10px;background:rgba(0,0,0,.75)}
+#progress{position:fixed;top:0;left:0;height:2px;background:#fff;width:0;z-index:20}
+@media(prefers-reduced-motion:reduce){*{animation:none!important;transition:none!important}.hero>*,.reveal{opacity:1;transform:none}}
